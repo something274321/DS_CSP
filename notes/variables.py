@@ -1,0 +1,3 @@
+name = "DIP"
+
+print(name)
