@@ -1,6 +1,6 @@
 time = int(input("what hour is it in military time? "))
 if time == 24:
-    print("GO TO SLEEP ITS MIDNIGHT!")
+    print("GO TO SLEEP IT'S MIDNIGHT!")
 elif time == 1:
     print("it's way to early to be awake")
 elif time < 0:
@@ -33,3 +33,5 @@ elif time < 23:
     print("Good Night")
 elif time < 24:
     print("Go To Bed")
+else:
+    print("WITCHCRAFT!")
