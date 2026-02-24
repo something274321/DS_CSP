@@ -22,23 +22,23 @@ int main(){
     printf("What is your monthly transportation cost? $ \n");
     scanf("%d",&tran);
 
-    int save = 10/money;
+    float save = (float)money/10;
 
-    float rentp = rent/money*100;
-    float utilp = util/money*100;
-    float grop = gro/money*100;
-    float tranp = tran/money*100;
-    float cost = rent+util+gro+tran+save;
-    float remain = money-cost;
+    float rentp = (float)rent/money*100;
+    float utilp = (float)util/money*100;
+    float grop = (float)gro/money*100;
+    float tranp = (float)tran/money*100;
+    float cost = (float)rent+util+gro+tran+save;
+    float remain = (float)money-cost;
 
     printf("Your rent/mortgage is $%d and that is %.2f percent of your income.\n",rent,rentp);
     printf("Your utilities cost is $%d and that is %.2f percent of your income.\n",util,utilp);
     printf("Your groceries cost is $%d and that is %.2f percent of your income.\n",gro,grop);
     printf("Your transportation cost is $%d and that is %.2f percent of your income.\n",tran,tranp);
 
-    printf("You should save $%d a month, that is 10 percent of your income.\n",save);
+    printf("You should save $%.2f a month, that is 10 percent of your income.\n",save);
 
-    printf("You have $%.2f of spending money each month!\n",cost);
+    printf("You have $%.2f of spending money each month!\n",remain);
 
     return 0;
 }
