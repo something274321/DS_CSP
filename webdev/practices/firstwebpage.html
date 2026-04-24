@@ -15,9 +15,12 @@
             p{color:rgb(177, 8, 8);font-size: 1.5em;}
             ul{color:rgb(177, 8, 8);font-size: 1.5em;}
             #car{width: 25%}
-            #red{width: 25%}
+            #red{width: 25%;}
             a{color:orange}
-            #split{display: flex; margin: 50px; align-items: center;}
+            #split{
+                display: flex; 
+                margin: 50px; 
+                align-items: center;}
             #one{margin: 50px;}
             #two{margin: 50px;}
             #all{background-color:black;margin: 50px}
@@ -26,8 +29,17 @@
             #p-last{margin: 50px;}
             #bib{margin: 50px;}
 
-
         </style>
+        <script>
+            function hide{
+                if(document.getElementById("gone").style.display =="block"){
+                    document.getElementById("gone").style.display = "none"
+                }
+                else{
+                    document.getElementById("gone").style.display ="block"
+                }
+            }
+        </script>
     </head>
     <body>
         <div id = 'all'>
@@ -104,9 +116,12 @@
                     trumping the importance of protecting national security.
                 </p>
             </div>
-            <img src='https://www.pbs.org/wgbh/americanexperience/media/gallery_images/Mccarthy-gallery-4-Herblock-10.31.1947-Its-Okay----Were-Hunting-Communist_dk4V0d8.jpg'alt='politicalcartoon' id="car">
-            <img src="https://static.tvtropes.org/pmwiki/pub/images/rsz_fnrywxd.png"alt="reportsus" id="red">
-            <div>
+                <img src="https://static.tvtropes.org/pmwiki/pub/images/rsz_fnrywxd.png"alt="reportsus" id="red">
+            <button onclick="hide">hide</button>
+            <div id ='gone'>
+                <img src='https://www.pbs.org/wgbh/americanexperience/media/gallery_images/Mccarthy-gallery-4-Herblock-10.31.1947-Its-Okay----Were-Hunting-Communist_dk4V0d8.jpg'alt='politicalcartoon' id="car">
+              
+            
                 <h2>Bibliography</h2>
                 <ul id = 'bib'>
                     <li>“Anti-Vietnam War Movement Student Materials_1” a .docx file provided in world civilization class resources on private Instructure class page. Last accessed December 12, 2025.</li>
