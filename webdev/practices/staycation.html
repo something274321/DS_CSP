@@ -7,10 +7,11 @@
         <title></title>
         <meta charset="UTF-8">
         <style>
-            body{background-color: gray; color:antiquewhite}
-            #hook{
+            body{background-color: rgb(5, 151, 177); color:rgb(65, 31, 0)}
+            #hook{color: rgb(209, 118, 39);display: flex; align-items: center;
                
             }
+            #main{display: flex;}
         </style>
         
         
@@ -23,6 +24,20 @@
                     document.getElementById("dis").style.display ="block"
                 }
             }
+            let num = 0
+            let pic_num = 0
+            let pic = []
+
+            function change(){
+                if(pic_num >= pic.length -1){
+                    pic_num = 0
+                }else{
+                    pic_num = 1
+                }
+                document.getElementById("three").src = 
+            }
+
+            
         </script>
 
 
@@ -30,11 +45,11 @@
     <body>
         <div id = 'hook'>
             <h1></h1>
-            <img>
+            <img id = one>
         </div>
         <div id = 'main'>
             <p></p>
-            <img>
+            <img id = two>
         </div>
         <div id = whygo>
             <h3></h3>
@@ -50,8 +65,9 @@
         <div id = 'dis'>
             <h3></h3>
             <p></p>
-            <img>
+            <img id = three onmouseover="change">
         </div>
+
     </body>
 
 </html>
