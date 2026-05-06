@@ -7,9 +7,10 @@
         <title></title>
         <meta charset="UTF-8">
         <style>
-            body{background-color: rgb(5, 151, 177); color:rgb(65, 31, 0)}
-            #hook{color: rgb(209, 118, 39);display: flex; align-items: center;
-               
+            body{color: rgb(14, 77, 88); 
+                background-color:rgb(189, 110, 37)}
+            #hook{color: rgb(61, 31, 4);
+                text-align: center;
             }
             #main{display: flex;}
         </style>
@@ -34,7 +35,7 @@
                 }else{
                     pic_num = 1
                 }
-                document.getElementById("three").src = 
+                document.getElementById("three").src = pic[pic_num]
             }
 
             
@@ -44,7 +45,7 @@
     </head>
     <body>
         <div id = 'hook'>
-            <h1></h1>
+            <h1 id = top>aaaaa</h1>
             <img id = one>
         </div>
         <div id = 'main'>
@@ -54,11 +55,12 @@
         <div id = whygo>
             <h3></h3>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>The lovely scenery: the rocks are great!</li>
+                <li>Swimming: the water is cool but not cold, so refreshing in summer heat.</li>
+                <li>Boating: Plenty of room and the waters are calm.</li>
+                <li>Jetskis: You can get to super high speeds and even pull someone behind you!</li>
+                <li>Fishing: Even the inexperienced can catch fish here (live bait works best).</li>
+                <li>Hiking: the amazing scenery is traversable; trails have different levels of difficulty.</li>
             </ol>
         </div>
         <button onclick = "hide()"></button>
