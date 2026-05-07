@@ -17,11 +17,19 @@
             background-color:rgb(189, 110, 37);
             font-family: "Comic Neue", cursive;
             font-weight: 400;
-            font-style: normal;}
+            font-style: normal;
+            font-size: 150%;
+            margin-left: 500px;
+            margin-right: 500px;
+        }
             #hook{color: rgb(61, 31, 4);
                 text-align: center;
             }
             #main{display: flex;}
+            #dis{display:  none}
+            #one{width: 100%;}
+            #two{width: 25%;}
+            #three{width: 50%;}
         </style>
         
         
@@ -36,7 +44,7 @@
             }
             let num = 0
             let pic_num = 0
-            let pic = []
+            let pic = ['https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTQ7VCBa1I_yXMlgDCEyExRp88ISP3dNME3V-hICF_eJkOktilX5lEdxZ0Qt6bYAhULaw_l5J3B8Wdz0h1an12sjOY&s=19','https://dynamic-media.tacdn.com/media/photo-o/30/3b/4c/2c/caption.jpg?w=700&h=500&s=1']
 
             function change(){
                 if(pic_num >= pic.length -1){
@@ -56,13 +64,17 @@
     <body>
         <div id = 'hook'>
             <h1>Lake Powell: The Perfect Staycation</h1>
-            <img id = one>
+            <img id ='one' src ='https://bearfoottheory.com/wp-content/uploads/2016/06/Lake-Powell-Kayaking.jpeg'>
         </div>
         <div id = 'main'>
-            <p></p>
-            <img id = two>
+            <p>
+                Lake Powell is a large reservoir shaped like a winding, twisty river in southern Utah and northern Arizona. 
+                It is famous as a gorgeous and fun outdoor vacation spot, especially on a houseboat. You can do many things there, from water sports, to taking in the beautiful view from a houseboat, to hiking the nearby trails. 
+                You might even want to look for Skinfin, the legendary Lake Powell monster.
+            </p>
+            <img id = 'two' src = 'https://i0.wp.com/chicover50.com/wp-content/uploads/2022/09/Lake-Powell-rock-stack-PR-scaled.jpg?resize=820%2C1148&ssl=1'>
         </div>
-        <div id = whygo>
+        <div id = 'whygo'>
             <h3></h3>
             <ol>
                 <li>The lovely scenery: the rocks are great!</li>
@@ -73,11 +85,14 @@
                 <li>Hiking: the amazing scenery is traversable; trails have different levels of difficulty.</li>
             </ol>
         </div>
-        <button onclick = "hide()"></button>
+        <button onclick = "hide()">click and scroll down if you want to hear about my trip to Lake Powell</button>
         <div id = 'dis'>
             <h3></h3>
-            <p></p>
-            <img id = three onmouseover="change">
+            <p>
+                I went to Lake Powell with my Young Men’s group and leaders. We fished, swam, and cooked, but my favorite thing to do was to ride an inflatable couch behind a jetski. 
+                It was super fun! So exhilarating!
+            </p>
+            <img id = 'three' onmouseover="change()" src = 'https://dynamic-media.tacdn.com/media/photo-o/30/3b/4c/2c/caption.jpg?w=700&h=500&s=1'>
         </div>
 
     </body>
